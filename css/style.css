@@ -1,0 +1,330 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+td,th,caption { font-size:12px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a{color:#069; text-decoration:none;}
+a:hover{ text-decoration:none; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px "微软雅黑","宋体",Verdana, Arial, Helvetica, sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: auto;} 
+/* css common */
+.clearfix:after {content: ""; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋体",Verdana, Arial, Helvetica, sans-serif; }
+
+.header {
+	width: 100%;
+	height: 114px;
+	background: #e83828;
+	border-bottom: 1px solid #f19675;
+}
+
+.header-in {
+	width: 1280px;
+	height: 114px;
+	margin: 0 auto;
+}
+
+.logo {
+	margin-top: 35px;
+	float:left;
+}
+
+.nav {
+	margin-top: 50px;
+	width: 600px;
+	height: 64px;
+	float: right;
+}
+
+.nav ul {
+	width: 600px;
+	text-align: center;
+	height: 64px;	
+}
+
+.nav li {
+	float: left;
+	width: 100px;
+	height: 64px;
+	line-height: 64px;
+}
+
+.nav li a {
+	display: block;
+	color: #fff;
+	font-size: 18px;
+}
+
+.banner {
+	width: 100%;
+	height: 846px;
+}
+
+.banner-inner {
+	width: 100%;
+	height: 846px;
+}
+
+.banner-inner .item {
+	width: 100%;
+	height: 846px;
+}
+
+.slogan {
+	width: 100%;
+	height: 320px;
+	border-bottom: 1px solid #a2a3a3;
+	text-align: center;
+}
+
+.slogan h3 {
+	color: #e83828;
+	font-size: 60px;
+	padding-top: 96px;
+}
+
+.slogan h4 {
+	color: #595757;
+	font-size: 40px;
+}
+
+.process {
+	width: 100%;
+	height: 518px;
+	border-bottom: 1px solid #a2a3a3;
+	border-top: 1px solid #c4c5c5;
+	text-align: center;
+}
+
+.process-ttl {
+	width: 438px;
+	height: 92px;
+	margin: 70px auto;
+	text-align: center;	
+}
+
+.process-list {
+	width: 1280px;
+	height: 182px;
+	margin: 0 auto;
+}
+
+.process-list li {
+	width: 250px;
+	float: left;
+}
+
+.process-list li a {
+	display: block;
+}
+
+.solution {
+	width: 100%;
+	text-align: center;
+}
+
+.solution-way {
+	width: 1280px;
+	height: 278px;
+	margin: 0 auto;
+}
+
+.solution-way li {
+	float: left;
+	margin-right: 8px;
+}
+
+.solution-way li a {
+	display: block;
+}
+
+.solution-slogan {
+	font-size: 21px;
+	color: #666;
+	padding: 20px 0;
+}
+
+.solution-tech {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.solution-tech li {
+	float: left;
+	margin-right: 36px;
+	margin-top: 30px;
+}
+
+.solution-tech li a {
+	display: block;
+}
+
+.last {
+	margin-right: 0;
+}
+
+.joinus {
+	width: 100%;
+	padding: 50px 0;
+	background: #f7f7f7;
+}
+
+.joinus-in {
+	width: 1280px;
+	height: 642px;
+	border: 1px solid #868686;
+	margin:0 auto;
+}
+
+.joinus-in table {
+	height: 100%;
+	width: 100%;
+}
+
+.joinus-in .photo-b {
+	width: 320px;
+	height: 320px;
+	float: left;
+}
+
+.joinus-in .photo-s {
+	width: 159px;
+	height: 160px;
+	float: left;
+	border-right: 1px solid #b0b0b1;
+	border-bottom: 1px solid #b0b0b1;
+}
+
+.joinus-in .no-bphoto {
+	border-right: 1px solid #b0b0b1;
+}
+
+.joinus-in .photo-b img{
+	width: 320px;
+	height: 320px;
+}
+
+.joinus-in .joinus-intro {
+	width: 480px;
+	height: 320px;
+	float: left;
+	background: #e83828;
+}
+
+.joinus-intro h3{
+	color: #fff;
+	font-size: 36px;
+	padding-top: 50px;
+	padding-left: 15px;
+}
+
+.joinus-intro p.title{
+	color: #fff;
+	font-size: 18px;
+	padding-top: 20px;
+	padding-left: 15px;
+}
+
+.joinus-intro p.desc{
+	color: #fff;
+	font-size: 18px;
+	line-height: 36px;
+	padding-top: 30px;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
+
+.joinus-in .joinus-empty {
+	width: 160px;
+	height: 320px;
+	border-right: 1px solid #b0b0b1;
+	border-bottom: 1px solid #b0b0b1;
+	float: left;
+}
+
+.joinus-in .joinus-add {
+	width: 318px;
+	height: 642px;
+	float: right;
+	text-align: center;
+}
+
+.joinus-add button {
+	cursor: pointer;
+	width: 220px;
+	height: 220px;
+	border: 0;
+	outline: 0;
+	margin-top: 160px;
+	background: url(../images/joinbtn.png) center no-repeat;
+}
+
+.joinus-add .joinus-ttl {
+	width: 240px;
+	margin: 35px auto;
+}
+
+.parnter {
+	width: 100%;
+	text-align: center;
+}
+
+.parnter-slogan {
+	color: #666;
+	font-size: 20px;
+	line-height: 30px;
+}
+
+.parnter-list {
+	margin: 50px auto;
+	width: 1270px;
+	height: 345px;
+}
+
+.parnter-list table {
+	width: 100%;
+	height: 100%;
+}
+
+.parnter-link {
+	display: block;
+	width: 180px;
+	height: 114px;
+	position: relative;
+}
+
+.parnter-img {
+	width: 180px;
+	height: 114px;
+}
+
+.footer {
+	width: 100%;
+	height: 240px;
+	background: #f7f7f7;
+	text-align: center;
+}
+
+.footer p.link {
+	padding-top: 70px;
+	font-size: 18px;
+}
+
+.footer p.link a {
+	color: #666;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	width: 120px;
+	margin: 0 10px;
+}
+
+.footer p.copyright {
+	padding-top: 30px;
+	font-size: 18px;
+}
