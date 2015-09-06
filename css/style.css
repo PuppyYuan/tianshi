@@ -327,3 +327,211 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 	padding-top: 20px;
 	font-size: 14px;
 }
+
+.main {
+	width: 100%;
+}
+
+.content {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.other-left {
+	width: 180px;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	float: left;
+	border: 1px solid #edf1f2;
+	padding: 0 20px;
+}
+
+.other-left li {
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #edf1f2;
+}
+
+.other-left li.selected a {
+	border-left: 2px solid #e83828;
+}
+
+.other-left li a {
+	display: block;
+	color: #666;
+	margin-left: -20px;
+	padding-left: 30px;
+	position: relative;
+	left: -1px;
+}
+
+.other-left li a:hover {
+	color: #14191e;
+}
+
+.other-right {
+	border: 1px solid #edf1f2;
+	width: 760px;
+	margin-left: 238px; 
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.other-right-in {
+	padding: 10px 40px;
+}
+
+.other-right-in h2 {
+	font-size: 18px;
+	padding: 10px 0;
+	border-bottom: 1px solid #edf1f2;
+	margin-bottom: 30px;
+}
+
+.other-right-dl {
+	padding-left: 20px;
+}
+
+.other-right-dl dt {
+	padding-left: 26px;
+	background: url(../images/faq.jpg) no-repeat;
+	padding-bottom: 8px;
+}
+
+.other-right-dl dd {
+	padding-left: 26px;
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+
+.team-big-ad{
+	width: 760px;
+	height: 400px;
+}
+
+.team-big-ad img {
+	width: 760px;
+}
+
+.team-small-mix li {
+	height: 190px;
+	float: left;
+}
+
+.team-small-mix img.team-small-ad {
+	width: 190px;
+}
+
+.team-small-mix img.team-small-big {
+	width: 380px;
+}
+
+.hire-para {
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 20px;
+}
+
+.hire-jobs {
+	padding: 30px 0;
+	border-top: 1px solid #edf1f2;
+}
+
+.hire-jobs a {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin-right: 25px;
+	color: #666;
+	font-size: 16px;
+}
+
+.hire-jobs-block {
+	margin-bottom: 100px;
+}
+
+.hire-jobs-block h3{
+	font-size: 16px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.hire-jobs-block p {
+	line-height: 28px;
+}
+
+.hire-jobs-block ol {
+	margin-left: 15px;
+}
+
+.hire-jobs-block ol li {
+	font-size: 12px;
+	line-height: 18px;
+	margin-bottom: 10px;
+}
+
+.contact-block {
+	height: 200px;
+}
+
+.contact-block h2{
+	font-size: 16px;
+	border: 0;
+	margin-bottom: 0;
+}
+
+.contact-block h3{
+	font-size: 16px;
+	border: 0;
+	margin-bottom: 15px;
+}
+
+.contact-block li {
+	margin-right: 80px;
+	width: 300px;
+	border-bottom: 1px solid #edf1f2;
+	float: left;
+}
+
+.contact-block li p {
+	font-size: 14px;
+	line-height: 28px;
+	margin-bottom: 15px;
+}
+
+.incuba-block {
+	margin-top: 100px;
+}
+
+.incuba-block li{
+	position: relative;
+	margin-right: 35px;
+	float: left;
+}
+
+.incuba-block li img {
+	width: 100px;
+}
+
+.incuba-desc-top {
+	position: absolute;
+	left: -20px;
+	top: -70px;
+	height: 60px;
+	width: 150px;
+	line-height: 20px;
+	border-bottom: 2px solid #edf1f2;
+}
+
+.incuba-desc-bot {
+	position: absolute;
+	left: -20px;
+	bottom: -70px;
+	height: 60px;
+	width: 150px;
+	line-height: 20px;
+	border-top: 2px solid #edf1f2;
+}
