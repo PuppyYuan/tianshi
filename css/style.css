@@ -121,7 +121,20 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 }
 
 .process-list li a {
+	width: 145px;
+	height: 145px;
 	display: block;
+}
+
+.process-list img.process-view {
+	width: 145px;
+	height: 145px;
+}
+
+.process-list img.process-info {
+	display: none;
+	width: 145px;
+	height: 145px;
 }
 
 .solution {
@@ -170,30 +183,30 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 	width: 100%;
 	padding: 50px 0;
 	background: #f7f7f7;
+	z-index: 990;
 }
 
 .joinus-in {
 	width: 1000px;
-	height: 502px;
+	height: 500px;
 	border: 1px solid #868686;
 	margin:0 auto;
-}
-
-.joinus-in table {
-	height: 100%;
-	width: 100%;
+	position: relative;
+	z-index: 1;
 }
 
 .joinus-in .photo-b {
+	position: absolute;
 	width: 250px;
 	height: 250px;
-	float: left;
+	z-index: 998;
 }
 
 .joinus-in .photo-s {
+	z-index: 998;
 	width: 124px;
 	height: 125px;
-	float: left;
+	position: absolute;
 	border-right: 1px solid #b0b0b1;
 	border-bottom: 1px solid #b0b0b1;
 }
@@ -207,10 +220,20 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 	height: 250px;
 }
 
+.joinus-in .photo-s img{
+	width: 125px;
+	height: 125px;
+}
+
 .joinus-in .joinus-intro {
+	overflow: hidden;
+	position: absolute;
+	left: 250px; 
+	top: 0;
+	z-index: 999;
 	width: 375px;
 	height: 250px;
-	float: left;
+	display: none;
 	background: #e83828;
 }
 
@@ -227,6 +250,42 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 	padding-top: 15px;
 	padding-left: 15px;
 }
+
+.joinus-in .joinus-intros {
+	overflow: hidden;
+	position: absolute;
+	left: 125px; 
+	top: 0;
+	z-index: 999;
+	width: 250px;
+	height: 125px;
+	display: none;
+	background: #e83828;
+}
+
+.joinus-intros h3{
+	color: #fff;
+	font-size: 18px;
+	padding-top: 10px;
+	padding-left: 15px;
+}
+
+.joinus-intros p.title{
+	color: #fff;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.joinus-intros p.desc{
+	color: #fff;
+	font-size: 14px;
+	line-height: 28px;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
 
 .joinus-intro p.desc{
 	color: #fff;

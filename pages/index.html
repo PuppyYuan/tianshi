@@ -52,13 +52,13 @@
   
   <div class="process">
     <div class="process-ttl"><img src="../images/process.png"/></div>
-    <div class="process-list">
+    <div class="process-list" id="process-list">
       <ul>
-        <li><a href="javascript:;"><img src="../images/process1.jpg"/></a></li>
-        <li><a href="javascript:;"><img src="../images/process2.jpg"/></a></li>
-        <li><a href="javascript:;"><img src="../images/process3.jpg"/></a></li>
-        <li><a href="javascript:;"><img src="../images/process4.jpg"/></a></li>
-        <li class="last"><a href="javascript:;"><img src="../images/process5.jpg"/></a></li>
+        <li><a href="javascript:;"><img src="../images/process1.jpg" class="process-view"/><img src="../images/process6.png" class="process-info"/></a></li>
+        <li><a href="javascript:;"><img src="../images/process2.jpg" class="process-view"/><img src="../images/process7.png" class="process-info"/></a></li>
+        <li><a href="javascript:;"><img src="../images/process3.jpg" class="process-view"/><img src="../images/process8.png" class="process-info"/></a></li>
+        <li><a href="javascript:;"><img src="../images/process4.jpg" class="process-view"/><img src="../images/process9.png" class="process-info"/></a></li>
+        <li class="last"><a href="javascript:;"><img src="../images/process5.jpg" class="process-view"/><img src="../images/process10.png" class="process-info"/></a></li>
       </ul>
        <div class="clearfix"></div>
     </div>
@@ -98,29 +98,58 @@
   
   <div class="joinus">
     <div class="joinus-in">
-      <div class="photo-b"><a href="javascript:;"><img src="../images/joinus.jpg"/></a></div>
-      <div class="joinus-intro">
-        <h3>Joke</h3>
-        <p class="title">JAVA开发工程师</p>
-        <p class="desc">友聚技术部基础平台组技术经理，JAVA官方开发组成员，Swoole开源项目创始人，前腾讯朋友网、易迅网、淘宝网搜索的后台团队核心技术骨干。</p>
+      <div class="photo-b" style="left: 0; top: 0; z-index:998;">
+        <a href="javascript:;">
+          <img src="../images/joinus.jpg"/>
+         </a>
+         <div class="joinus-intro">
+           <h3>Joke</h3>
+           <p class="title">JAVA开发工程师</p>
+           <p class="desc">友聚技术部基础平台组技术经理，JAVA官方开发组成员，Swoole开源项目创始人，前腾讯朋友网、易迅网、淘宝网搜索的后台团队核心技术骨干。</p>
+         </div>
       </div>
-      <div class="joinus-empty"></div>
+      <div class="photo-b" style="left: 250px; top: 0;; z-index:997;">
+        <a href="javascript:;">
+          <img src="../images/joinus.jpg"/>
+         </a>
+         <div class="joinus-intro">
+           <h3>Joke</h3>
+           <p class="title">JAVA开发工程师</p>
+           <p class="desc">友聚技术部基础平台组技术经理，JAVA官方开发组成员，Swoole开源项目创始人，前腾讯朋友网、易迅网、淘宝网搜索的后台团队核心技术骨干。</p>
+         </div>
+      </div>
+      <div class="photo-b" style="left: 500px; top: 0; z-index:996;">
+        <div class="photo-s" style="left: 0; top: 0; z-index:995;"></div>
+        <div class="photo-s" style="left: 125px; top: 0; z-index:994;"></div>
+        <div class="photo-s" style="left: 0px; top: 125px; z-index:995;"></div>
+        <div class="photo-s" style="left: 125px; top: 125px; z-index:994;"></div>
+      </div>
       <div class="joinus-add">
         <button>&nbsp;</button>
         <div class="joinus-ttl"><img src="../images/jointtl.png"/></div>
       </div>
-      <div class="photo-b">
-        <div class="photo-s"></div>
-        <div class="photo-s"></div>
-        <div class="photo-s"></div>
-        <div class="photo-s"></div>
+      <div class="photo-b" style="left: 0; top: 250px; z-index:999;">
+        <div class="photo-s" style="left: 0; top: 0; z-index:999;">
+          <a href="javascript:;">
+            <img src="../images/joinus.jpg"/>
+          </a>
+          <div class="joinus-intros">
+            <h3>Joke</h3>
+            <p class="title">JAVA开发工程师</p>
+            <p class="desc">友聚技术部基础平台组技术经理</p>
+          </div>
+        </div>
+        <div class="photo-s" style="left: 0; top: 125px; z-index:999;"></div>
+        <div class="photo-s" style="left: 125px; top: 0; z-index:998;"></div>
+        <div class="photo-s" style="left: 125px; top: 125px; z-index:997;"></div>
       </div>
-      <div class="photo-b no-bphoto"></div>
-      <div class="photo-s"></div>
-      <div class="photo-s"></div>
-      <div class="photo-s"></div>
-      <div class="photo-s"></div>
+      <div class="photo-b no-bphoto" style="left: 250px; top: 250px; z-index:997;"></div>
+      <div class="photo-s" style="left: 500px; top: 250px; z-index:996;"></div>
+      <div class="photo-s" style="left: 500px; top: 375px; z-index:996;"></div>
+      <div class="photo-s" style="left: 625px; top: 250px; z-index:995;"></div>
+      <div class="photo-s" style="left: 625px; top: 375px; z-index:995;"></div>
     </div>
+    <div class="clearfix"></div>
   </div>
   
   <div class="parnter">
@@ -251,6 +280,23 @@
   </div>
   
   <script type="text/javascript">
+   var turn = function(target,time,opts){
+     target.find('a').hover(
+       function(){
+         $(this).find('.process-view').stop().animate(opts[0], time, function(){
+           $(this).hide().next().show();
+           $(this).next().animate(opts[1],time);
+         });
+       }, 
+       function(){
+         $(this).find('.process-info').animate(opts[0], time, function(){
+           $(this).hide().prev().show();
+           $(this).prev().animate(opts[1],time);
+         });
+       }
+     );
+    }
+    turn($('#process-list'), 200, [{'width': 0}, {'width': '145px'}]);
      
     $(function(){
         var banner = $('.banner-inner');
@@ -263,6 +309,11 @@
 					paginationCustom: false
 				});
 
+        $('.photo-b a').hover(function(){
+          $(this).next().animate({'width': '375px', opacity: 'toggle'}, 'swing');
+        }, function(){
+          $(this).next().animate({'width': 0, opacity: 'toggle'}, 'swing');
+        });
       });
   </script>
 </body>
