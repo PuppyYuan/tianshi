@@ -490,8 +490,23 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 
 .hire-para {
 	font-size: 14px;
-	line-height: 22px;
+	line-height: 28px;
 	margin-bottom: 20px;
+	text-indent: 2em;
+}
+
+.hire-img-left {
+	float: left;
+	width: 125px;
+	height: 125px;
+	margin-right: 20px;
+}
+
+.hire-img-right {
+	float: right;
+	width: 125px;
+	height: 125px;
+	margin-left: 20px;
 }
 
 .hire-jobs {
