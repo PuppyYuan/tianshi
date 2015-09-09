@@ -495,6 +495,12 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 	text-indent: 2em;
 }
 
+.solute-para {
+	font-size: 14px;
+	line-height: 28px;
+	text-indent: 2em;
+}
+
 .hire-img-left {
 	float: left;
 	width: 125px;
@@ -524,13 +530,29 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 }
 
 .hire-jobs-block {
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 }
 
 .hire-jobs-block h3{
+	cursor: pointer;
 	font-size: 16px;
 	margin-bottom: 15px;
 	margin-top: 15px;
+	position: relative;
+}
+
+.hire-jobs-block h3 span {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin-left: 10px;
+	background: url(../images/down-arrow.png)
+}
+
+.hire-jobs-detail {
+	display: none;
 }
 
 .hire-jobs-block p {
