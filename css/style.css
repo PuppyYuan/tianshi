@@ -310,12 +310,16 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 	height: 502px;
 	float: right;
 	text-align: center;
+	border-left: 1px solid #b0b0b1;
+	text-align: center;
 }
 
-.joinus-add button {
+.joinus-add .joinus-add-link {
 	cursor: pointer;
+	display: block;
 	width: 174px;
 	height: 173px;
+	margin-left: 40px;
 	border: 0;
 	outline: 0;
 	margin-top: 100px;
