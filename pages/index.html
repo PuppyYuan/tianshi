@@ -405,7 +405,6 @@
             itemOverTimer=setTimeout(function(){
                 showItemInfo(_this);
             },800);
-            $(this).next().fadeIn();
         }).on('mouseleave', '.joinus-item a', function(){
             clearTimeout(itemOverTimer)
             $(this).next().fadeOut("fast");
