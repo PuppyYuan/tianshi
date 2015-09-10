@@ -211,13 +211,14 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 
 .joinus-team-text {
 	position: absolute;
-	width: 238px;
-	height: 46px;
+	width: 501px;
+	height: 80px;
 	top: 50%;
 	left: 50%;
 	font-size: 36px;
 	color: #e83828;
-	margin: -23px 0  0 -119px;
+	margin: -40px 0  0 -250px;
+	background: url(../images/team.png) center no-repeat;
 	z-index: 11;
 }
 
