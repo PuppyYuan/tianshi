@@ -116,8 +116,9 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 }
 
 .process-list li {
-	width: 200px;
+	width: 145px;
 	float: left;
+	margin-right: 65px;
 }
 
 .process-list li a {
@@ -140,7 +141,7 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 .solution {
 	width: 100%;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 .solution-way {
@@ -180,35 +181,119 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 }
 
 .joinus {
+	position: relative;
 	width: 100%;
-	padding: 50px 0;
+	height: 500px;
 	background: #f7f7f7;
 	z-index: 990;
+	font-size: 0;
 }
 
 .joinus-in {
 	width: 1000px;
 	height: 500px;
-	border: 1px solid #868686;
 	margin:0 auto;
 	position: relative;
 	z-index: 1;
+}
+
+.joinus-bigmask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0.60;
+  	filter:alpha(opacity=60);
+  	background-color: #edf1f4;
+	z-index: 10;
+}
+
+.joinus-team-text {
+	position: absolute;
+	width: 238px;
+	height: 46px;
+	top: 50%;
+	left: 50%;
+	font-size: 36px;
+	color: #e83828;
+	margin: -23px 0  0 -119px;
+	z-index: 11;
+}
+
+.joinus-item-b {
+	float: left;
+	width: 250px;
+	height: 250px;
+	position: relative;
+}
+
+.joinus-item-s {
+	float: left;
+	width: 125px;
+	height: 125px;
+	position: relative;
+}
+
+.joinus-item-a {
+	width: 248px;
+	height: 498px;
+	float: right;
+	border: 1px solid #ededed;
+	background: #fff;
+	position: relative;
+}
+
+.joinus-b img {
+	width: 250px;
+	height: 250px;
+}
+
+.joinus-avatar{
+	display: block;
+}
+
+.joinus-avatar:hover .joinus-mask{
+	opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+.joinus-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0.6;
+	filter:alpha(opacity=60);
+	background-color: #a8acaf;
+	transition:opacity .15s;
+	-moz-transition:opacity .15s;
+	-webkit-transition:opacity .15s;
+	-o-transition:opacity .15s;
+}
+
+.joinus-s img {
+	height: 125px;
+	width: 125px;
 }
 
 .joinus-in .photo-b {
 	position: absolute;
 	width: 250px;
 	height: 250px;
-	z-index: 998;
+	z-index: 12;
+}
+
+.joinus-in .photo-b a {
+	display: block;
 }
 
 .joinus-in .photo-s {
-	z-index: 998;
+	z-index: 12;
 	width: 124px;
 	height: 125px;
 	position: absolute;
-	border-right: 1px solid #b0b0b1;
-	border-bottom: 1px solid #b0b0b1;
 }
 
 .joinus-in .no-bphoto {
@@ -228,13 +313,20 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 .joinus-in .joinus-intro {
 	overflow: hidden;
 	position: absolute;
-	left: 250px; 
 	top: 0;
-	z-index: 999;
+	z-index: 13;
 	width: 375px;
 	height: 250px;
 	display: none;
 	background: #e83828;
+}
+
+.joinus-in .right-intro {
+	left: 100%; 
+}
+
+.joinus-in .left-intro {
+	right: 100%; 
 }
 
 .joinus-intro h3{
@@ -254,9 +346,8 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 .joinus-in .joinus-intros {
 	overflow: hidden;
 	position: absolute;
-	left: 125px; 
 	top: 0;
-	z-index: 999;
+	z-index: 13;
 	width: 250px;
 	height: 125px;
 	display: none;
@@ -310,25 +401,24 @@ body {background:#fff;color:#666;font-size:14px;font-family:"微软雅黑","宋�
 	height: 502px;
 	float: right;
 	text-align: center;
-	border-left: 1px solid #b0b0b1;
-	text-align: center;
 }
 
-.joinus-add .joinus-add-link {
+.joinus-item-a .joinus-add-link {
 	cursor: pointer;
 	display: block;
 	width: 174px;
 	height: 173px;
-	margin-left: 40px;
 	border: 0;
 	outline: 0;
-	margin-top: 100px;
+	margin: 100px auto 20px;
 	background: url(../images/joinbtn.png) center no-repeat;
 }
 
-.joinus-add .joinus-ttl {
-	width: 240px;
+.joinus-item-a .joinus-ttl {
+	width: 250px;
+	height: 51px;
 	margin: 20px auto;
+	background: url(../images/jointtl.png) 35px center no-repeat;
 }
 
 .parnter {
